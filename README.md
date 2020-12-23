@@ -1,4 +1,4 @@
-# nvue-crm
+# vue-crm
 
 ## Project setup
 ```
