@@ -10,7 +10,7 @@ import MainLayout from "@/layouts/MainLayout";
 export default {
   computed: {
     layout() {
-      console.log(this.$route.meta);
+      // console.log(this.$route.meta);
       return (this.$route.meta.layout || "empty") + "-layout";
     },
   },
