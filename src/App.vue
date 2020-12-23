@@ -1,25 +1,23 @@
 <template>
   <div id="app">
-    <component :is="layout">
-      <router-view />
-    </component>
+    <component :is="layout"> </component>
   </div>
 </template>
 
 <script>
-import EmptyLayout from './layouts/emptyLayout.vue'
-import MainLayout from './layouts/mainLayout.vue'
+import EmptyLayout from "@/layouts/EmptyLayout";
+import MainLayout from "@/layouts/MainLayout";
 export default {
   computed: {
     layout() {
       console.log(this.$route.meta);
-      return (this.$route.meta.layout || 'empty') + '-layout'
+      return (this.$route.meta.layout || "empty") + "-layout";
     },
   },
   components: {
     EmptyLayout,
-    MainLayout
-  }
+    MainLayout,
+  },
 };
 </script>
 
